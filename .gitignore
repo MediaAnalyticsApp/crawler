@@ -1,3 +1,5 @@
 .idea
+__pycache__/
+*.pyc
 db_test.py
 conf/config.ini
