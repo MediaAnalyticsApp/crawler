@@ -1,1 +1,3 @@
 pymysql
+robobrowser
+requests

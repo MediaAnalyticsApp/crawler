@@ -2,7 +2,7 @@ import pymysql.cursors
 from conf import config
 
 
-class Db:
+class CrawlerDb:
     def __init__(self):
         pass
 
