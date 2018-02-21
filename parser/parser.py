@@ -16,7 +16,7 @@ class Parser:
 
     def __init__(self):
 
-        self.browser = RoboBrowser(history=True, cache=True, user_agent=self.USERAGENT)
+        self.browser = RoboBrowser(history=True, cache=True, user_agent=self.USERAGENT, parser='lxml')
 
     def open_page(self, url):
         self.browser.open(url)
@@ -85,7 +85,7 @@ class Parser:
             for map_link in sitemaps_links.copy():
                 if map_link not in parsed_sitemaps_links:
 
-                    print(map_link)
+                    # print(map_link)
                     site_links.extend(parse_sitemap(map_link))
                 else:
                     sitemaps_links.remove(map_link)
